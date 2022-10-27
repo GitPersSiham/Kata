@@ -1,14 +1,21 @@
-#FooBarQix
-Vous devez implémenter une fonction String compute(String) qui implémente les règles suivantes.
+# FooBarQixKata
+**FooBarQix**
 
-#Étape 1
-Règlement
-Si le nombre est divisible par 3, écrivez « Foo » au lieu du nombre
-Si le nombre est divisible par 5, ajouter « Bar »
-Si le nombre est divisible par 7, ajoutez « Qix »
-Pour chaque chiffre 3, 5, 7, ajoutez « Foo », « Bar », « Qix » dans l’ordre des chiffres.
+You should implement a function String compute(String) which implements the following rules.
 
-#Exemples
+**Step 1**  
+
+Rules
+
+* If the number is divisible by 3, write “Foo” instead of the number
+* If the number is divisible by 5, add “Bar”
+* If the number is divisible by 7, add “Qix”
+* For each digit 3, 5, 7, add “Foo”, “Bar”, “Qix” in the digits order.
+
+
+Examples
+
+<code><pre>
 1  => 1
 2  => 2
 3  => FooFoo (divisible by 3, contains 3)
@@ -25,11 +32,15 @@ Pour chaque chiffre 3, 5, 7, ajoutez « Foo », « Bar », « Qix » dans l’or
 33 => FooFooFoo (divisible by 3, contains two 3)
 51 => FooBar
 53 => BarFoo
+</code></pre>
 
-#Étape 2
-Nous avons une nouvelle demande commerciale : nous devons garder une trace de 0 en chiffres, chaque 0 doit être remplacé par le caractère « * ».
+**Step 2**
 
-#Exemples
+We have a new business request : we must keep a trace of 0 in numbers, each 0 must be replace par char “*“.
+
+Examples
+
+<code><pre>
 101   => 1*1
 303   => FooFoo*Foo
 105   => FooBarQix*Bar
